@@ -9,12 +9,12 @@
   display: inline-block;
   height: 40px;
   line-height: 40px;
-  font-weight: 300;
   padding: 0 20px;
   color: #fff;
   background: $logo-color;
   font-family: $font-family;
   border-radius: 5px;
+  text-transform: uppercase;
 
   &:hover {
     color: #fff;
@@ -23,15 +23,20 @@
   }
 }
 
+.section-chat__app-list a {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 992px){
   .section-chat {
-    background-position: center 420px;
+    background-position: center 460px;
   }
 }
 
 @media screen and (min-width: 621px) and (max-width: 767px){
   .section-chat {
-    background-position: center 500px;
+    background-position: 300px 270px;
   }
 }
 
