@@ -3,6 +3,9 @@
 }
 
 .header__menu-toggle {
+  position: absolute;
+  left: 10px;
+  top: 6px;
   background: none;
   border: none;
   padding: 6px 8px 5px;
@@ -102,13 +105,12 @@
 
 .side-nav__header {
   height: 200px;
-  background: #fff;
+  background: #eee;
   color: #FFF;
   display: flex;
   padding: 16px;
   align-items: flex-end;
   font-size: 24px;
-  border-bottom: 1px solid #ccc;
 
   img {
     width: 180px;

@@ -24,3 +24,13 @@
 .main-footer {
   padding: 40px 0;
 }
+
+.footer__logo {
+  width: 120px;
+}
+
+@media screen and (max-width: 992px){
+  .main-footer {
+    text-align: center;
+  }
+}
