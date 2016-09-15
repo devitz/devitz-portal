@@ -23,7 +23,7 @@ app.use(compression());
 
 // default to .html (you can omit the extension in the URL)
 app.use(serveStatic(`${__dirname}/public`, {
-  'maxAge': '2629000',
+  'maxAge': '262974382876',
   'extensions': ['html']
 }));
 
