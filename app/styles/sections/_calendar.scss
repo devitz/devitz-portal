@@ -1,0 +1,23 @@
+.title {
+  margin: 0;
+}
+
+.title__image {
+  width: 120px;
+}
+
+.section-title {
+  text-align: center;
+  font-family: $font-family;
+  font-weight: 300;
+  color: $section-title-color;
+  @include rem(font-size, 3.2rem);
+}
+
+.extra-text {
+  @include rem(font-size, 1.2rem);
+}
+
+.text-center {
+  text-align: center;
+}

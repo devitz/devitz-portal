@@ -60,24 +60,65 @@
     <header class="main-header">
       <div class="container">
         <div class="row">
-          <div class="col-xs-2">
+          <div class="mobile-nav-col visible-xs visible-sm col-xs-2">
+            <div class="mobile-nav-wrapper">
+              <button class="js-menu-show header__menu-toggle material-icons">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-xs-10 col-sm-2">
             <h1 class="title">
               <img class="title__image" src="images/logo_300x79.png" alt="Comunidade Devitz" />
             </h1>
           </div>
 
-          <div class="col-xs-10">
+          <div class="hidden-xs hidden-sm col-xs-10">
             <nav class="main-nav">
               <a class="main-nav__item" href="http://conferencia.devitz.com">Conferência</a>
-              <a class="main-nav__item" href="#agenda">Eventos</a>
+              <a class="main-nav__item" data-anchor href="#calendario">Eventos</a>
               <a class="main-nav__item" href="http://hackerclub.devitz.com">Hacker Clube</a>
               <a class="main-nav__item" href="http://gdg.devitz.com">GDG</a>
-              <a class="main-nav__item" href="#chat">Chat</a>
+              <a class="main-nav__item" data-anchor href="#chat">Chat</a>
+              <a class="main-nav__item" href="http://hub.devitz.com">Blogs</a>
             </nav>
           </div>
         </div>
       </div>
     </header>
+
+    <aside class="js-side-nav side-nav">
+      <nav class="js-side-nav-container side-nav__container">
+        <button class="js-menu-hide side-nav__hide material-icons">
+          <i class="glyphicon glyphicon-remove"></i>
+        </button>
+        <header class="side-nav__header">
+          <img class="img-responsive" src="images/logo_300x79.png" alt="Comunidade Devitz" />
+        </header>
+
+        <ul class="side-nav__content">
+          <li>
+            <a class="main-nav__item" href="http://conferencia.devitz.com">Conferência</a>
+          </li>
+          <li>
+            <a class="main-nav__item" data-anchor href="#calendario">Eventos</a>
+          </li>
+          <li>
+            <a class="main-nav__item" href="http://hackerclub.devitz.com">Hacker Clube</a>
+          </li>
+          <li>
+            <a class="main-nav__item" href="http://gdg.devitz.com">GDG</a>
+          </li>
+          <li>
+            <a class="main-nav__item" data-anchor href="#chat">Chat</a>
+          </li>
+          <li>
+            <a class="main-nav__item" href="http://hub.devitz.com">Blogs</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
     <section class="section section-home">
       <div class="home-carousel" data-carousel>
@@ -100,7 +141,7 @@
         </div>
 
         <div class="home-carousel__item">
-          <a href="http://devitz.slack.com" target="_blank">
+          <a href="#chat" data-anchor target="_blank">
             <img class="img-responsive" src="images/home/slack.jpg" alt="Está com dúvidas? Entre agora no chat do devitz e solucione todas elas!" />
           </a>
         </div>
@@ -142,12 +183,12 @@
       <div class="content-center">
         <div>
           <ol class="row">
-            <li class="col-xs-12 col-md-6">
+            <li class="col-xs-12 col-sm-6">
               <h3>Solicitar um convite:</h3>
               <a class="button-slack-invite" href="http://goo.gl/edZxtf" target="_blank">Convite para chat</a>
             </li >
             
-            <li class="col-xs-12 col-md-6">
+            <li class="col-xs-12 col-sm-6">
               <h3>Utilize diretamente no browser ou através dos aplicativos: </h3>
 
               <a href="https://play.google.com/store/apps/details?id=com.Slack&hl=pt_BR" target="_blank">
@@ -164,7 +205,17 @@
     </section>
 
     <footer class="main-footer">
-      
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-10">
+            <p>Comunidade de desenvolvedores de Imperatriz e Região <span class="copyleft">&copy;</span> 2016</p>
+
+          </div>
+          <div class="col-xs-12 col-md-2">
+            <img class="img-responsive" src="images/logo_300x79.png" alt="Comunidade Devitz"/>
+          </div>
+        </div>
+      </div>
     </footer>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -202,6 +253,8 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
+    <script src="scripts/detabinator.js"></script>
+    <script src="scripts/side-nav.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

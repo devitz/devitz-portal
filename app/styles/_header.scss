@@ -1,0 +1,33 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: $main-header-full-height;
+  background: #fff;
+  padding: $main-header-padding 0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-nav__item {
+  height: $main-nav-height;
+  line-height: $main-nav-height; 
+  font-family: $font-family;
+  color: $main-nav-link-color;
+  font-weight: 300;
+  text-transform: uppercase;
+  @include rem(font-size, 1.8rem);
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+}

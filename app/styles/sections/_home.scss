@@ -1,0 +1,40 @@
+.section-home {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  @extend .glyphicon;
+
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  font-size: 0;
+  border: 0;
+  background: none;
+  text-shadow: 0 0 4px rgba(0,0,0,.2);
+  color: #fff;
+
+  &:hover {
+    background: rgba(255,255,255,.2);
+  }
+}
+
+.slick-prev {
+  left: 0;
+
+  &:before {
+    font-size: 24px;
+    @extend .glyphicon-chevron-left;
+  }
+}
+
+.slick-next {
+  right: 0;
+
+  &:before {
+    font-size: 24px;
+    @extend .glyphicon-chevron-right;
+  }
+}

@@ -1,0 +1,36 @@
+.section-chat {
+  min-height: 700px;
+  background-image: url(../images/slack.png);
+  background-repeat: no-repeat; 
+  background-position: center 360px;
+}
+
+.button-slack-invite {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  padding: 0 20px;
+  color: #fff;
+  background: $logo-color;
+  font-family: $font-family;
+  border-radius: 5px;
+
+  &:hover {
+    color: #fff;
+    background: #1e5ba4;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .section-chat {
+    background-position: center 420px;
+  }
+}
+
+@media screen and (min-width: 621px) and (max-width: 767px){
+  .section-chat {
+    background-position: center 500px;
+  }
+}

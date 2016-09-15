@@ -11,3 +11,12 @@ $icon-font-path: '../fonts/';
 @import "bootstrap_grid";
 @import "structure";
 @import "mobile";
+@import "typography";
+@import "sections";
+@import "header";
+@import "nav";
+
+// Sections
+@import "sections/home";
+@import "sections/calendar";
+@import "sections/chat";
