@@ -17,7 +17,7 @@ $ gulp serve
 ### Deploy
 Após mudanças:
 ```sh
-$ gulp build
+$ gulp 
 $ git add path/para/novos/arquivos
 $ git commit -am "Git message"
 $ sh deploy.sh
