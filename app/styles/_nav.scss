@@ -6,13 +6,13 @@
   position: absolute;
   left: 10px;
   top: 6px;
-  background: none;
   border: none;
   padding: 6px 8px 5px;
   margin: 0;
-  color: #000;
+  color: #fff; 
+  background: $logo-color;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid $logo-color;
   border-radius: 5px;
 }
 
@@ -96,16 +96,17 @@
   top: 16px;
   background: none;
   border: none;
-  color: #000;
+  color: #fff;
   width: 24px;
   height: 24px;
   padding: 0;
   margin: 0;
+  font-size: 32px;
 }
 
 .side-nav__header {
   height: 200px;
-  background: #eee;
+  background: $logo-color;
   color: #FFF;
   display: flex;
   padding: 16px;
