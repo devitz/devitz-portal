@@ -1,0 +1,28 @@
+{
+  "name": "devitz-portal",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "slick-carousel": "^1.6.0",
+    "font-roboto": "^0.0.2"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "font-roboto": {
+      "main": [
+        "src/styles/roboto.scss",
+        "dist/fonts/*"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}

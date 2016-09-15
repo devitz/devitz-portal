@@ -1,0 +1,13 @@
+$icon-font-path: '../fonts/';
+
+@import "variables";
+
+// bower:scss
+@import "bower_components/slick-carousel/slick/slick.scss";
+@import "bower_components/font-roboto/src/styles/roboto.scss";
+// endbower
+
+@import "mixins";
+@import "bootstrap_grid";
+@import "structure";
+@import "mobile";

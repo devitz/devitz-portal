@@ -1,0 +1,24 @@
+// General
+//
+$logo-color: #134c91;
+$font-family: Roboto, Verdana, sans-serif;
+$text-color: #444;
+
+// Main header
+//
+$main-header-height: 47px;
+$main-header-padding: 10px;
+$main-header-full-height: $main-header-height + ($main-header-padding * 2);
+
+// Main nav
+//
+$main-nav-height: $main-header-height;
+$main-nav-link-color: #444;
+
+// Section
+//
+$section-title-color: $text-color;
+
+// Footer
+//
+$main-footer-height: 100px;
